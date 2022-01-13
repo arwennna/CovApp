@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">CovApp</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Postavke</string>
+
+    <string name="share_button">Podijeli</string>
+
+    <string name="menu_home">Početna</string>
+
+    <string name="menu_statistics">Statistika</string>
+
+    <string name="menu_about_app">O aplikaciji</string>
+
+    <string name="personal_info">Lični podaci</string>
+
+    <string name="registration">Registruj se</string>
+
+    <string name="next">Sljedeće</string>
+
+    <string name="name">Ime:</string>
+
+    <string name="last_name">Prezime:</string>
+
+    <string name="gender">Spol:</string>
+
+    <string name="gender_male">Muški</string>
+    <string name="gender_female">Ženski</string>
+
+
+    <string name="contact_info">Kontakt</string>
+
+    <string name="email">E-mail adresa:</string>
+
+    <string name="tel">Telefon:</string>
+
+    <string name="citizenship_age">Državljanstvo i dob</string>
+
+    <string name="citizenship">Državljanstvo:</string>
+
+    <string name="age">Dob:</string>
+
+    <string name="citizenship_bh" translatable="false">BiH</string>
+    <string name="citizenship_other">Ostalo</string>
+
+    <string name="unable">Nije moguća prijava za vakcinaciju.</string>
+
+    <string name="bad_age">Da biste ostvarili pravo prijave za vakcinaciju, morate imati 18 ili više godina.</string>
+
+    <string name="bad_citizenship">Da biste ostvarili pravo prijave za vakcinaciju, morate biti državljanin Bosne i Hercegovine.</string>
+
+    <string name="back_to_home">Nazad na početnu</string>
+
+    <string name="profession">Zanimanje</string>
+    <string name="profession_text">Označite polje pored vašeg zanimanja ili označite polje "Ostalo":</string>
+    <string name="firefighter">Vatrogasac</string>
+    <string name="policeman">Policijski službenik</string>
+    <string name="healthcare">Zdravstveni radnik</string>
+    <string name="sales">Trgovački radnik</string>
+    <string name="service">Ugostiteljski radnik</string>
+    <string name="teacher">Prosvjetni radnik</string>
+    <string name="public_transport">Radnik u javnom prevozu</string>
+    <string name="other">Ostalo</string>
+
+    <string name="health_con">Zdravstveno stanje</string>
+    <string name="health_con_text">Ukoliko se neko od ispod navedenih zdravstvenih stanja odnosi na Vas, označite polje pored njega:</string>
+
+    <string name="diabetes">Šećerna bolest/dijabetes</string>
+    <string name="pregnancy">Trudnoća</string>
+    <string name="cardio_vascular">Oboljenja srca i krvnih žila</string>
+    <string name="kidneys">Oboljenja bubrega</string>
+    <string name="liver">Oboljenja jetre</string>
+    <string name="cancer">Karcinom</string>
+    <string name="ms">Multipla skleroza</string>
+    <string name="lungs">Oboljenja pluća</string>
+    <string name="leukemia">Leukemija</string>
+    <string name="asthma">Astma</string>
+
+    <string name="covid" translatable="false">Covid-19</string>
+    <string name="covid_text">Da li ste trenutno oboljeli od Covid-19 virusa ili osjećate neke od simptoma zaraze
+    Covid-19 virusom kao su: povišena tjelesna temperatura, malaksalost, bolovi u mišićima, glavobolja, kašalj, itd.?</string>
+
+    <string name="yes">Da</string>
+    <string name="no">Ne</string>
+
+    <string name="bad_covid">Ukoliko ste oboljeli ili imate neke od simptoma zaraze Covid-19 virusom, preporučujemo Vam
+        da ostanete kući da biste zaštili svoje, ali i zdravlje drugih. Pokušajte se prijaviti ponovo nakon 14 ili više dana.</string>
+
+    <string name="vaccine">Vakcinacija</string>
+
+    <string name="vaccine_text">Kojom od vakcina dostupnih na našem tržištu želite da budete vakcinisani?</string>
+
+    <string name="vaccine_astra">AstraZeneca (Oksfordska vakcina)</string>
+    <string name="vaccine_pfizer" translatable="false">Pfizer</string>
+    <string name="vaccine_sinovac">Sinovac ili Sinopharm (Kineske vakcine)</string>
+
+    <string name="about_text">Ova aplikacija napravljena je kao semestralni projekat u sklopu predmeta Razvoj mobilnih aplikacija,
+        kod profesora van. prof. dr Elmedina Selmanovića. <br />
+        Autori projekta su Elma Turčinović i Sara-Farah Materne. <br /> <br />
+
+        Aplikacija predstavlja simulaciju registracije za vakcinaviju protiv virusa Covid-19. Pisana je u programskom jeziku Kotlin. <br />
+        Korištene ikonice preuzete su sa <a>flaticon.com</a>, iz paketa <i>Virus Transmission</i> autora <i>mavadee</i>.</string>
+
+    <string name="location_text">Odaberite mjesto vakcinacije:</string>
+    <string name="location_sarajevo" translatable="false">Sarajevo</string>
+    <string name="location_mostar" translatable="false">Mostar</string>
+    <string name="location_banjaluka" translatable="false">Banja Luka</string>
+    <string name="location_tuzla" translatable="false">Tuzla</string>
+
+    <string name="overview_text">Uspješno ste se registrovali za vakcinaciju!</string>
+    <string name="overview_name">Ime: </string>
+    <string name="overview_lastname">Prezime: </string>
+    <string name="overview_email">"E-mail: "</string>
+    <string name="overview_location">Lokacija:</string>
+    <string name="overview_date">Datum: </string>
+    <string name="overview_time">Vrijeme: </string>
+    <string name="overview_vaccine">Vrsta vakcine: </string>
+    <string name="overview_age">Godine:</string>
+    <string name="overview_gender">Spol: </string>
+
+    <string name="toast_name">Molimo, unesite ime.</string>
+    <string name="toast_lastname">Molimo, unesite prezime.</string>
+    <string name="toast_gender">Molimo, odaberite spol.</string>
+    <string name="toast_email">Molimo, unesite e-mail adresu.</string>
+    <string name="toast_phone">Molimo, unesite broj telefona.</string>
+    <string name="toast_citizenship">Molimo, odaberite državljanstvo.</string>
+    <string name="toast_age">Molimo, unesite godine.</string>
+    <string name="toast_profession">Molimo, odaberite Vaše zanimanje.</string>
+    <string name="toast_vaccine">Molimo, odaberite vakcinu.</string>
+    <string name="toast_location">Molimo, odaberite lokaciju.</string>
+    <string name="toast_covid">Molimo, odaberite jednu od opcija.</string>
+
+    <string name="message_succ">Vaša prijava za vakcinaciju je registrovana. </string>
+    <string name="message_date">Vaš termin za vakcinaciju je </string>
+    <string name="message_time">u </string>
+
+    <string name="statistics_text">Do sada prijavljenih: </string>
+    <string name="statistics_astra" translatable="false">Astra Zeneca </string>
+    <string name="statistics_pfizer" translatable="false">Pfizer</string>
+    <string name="statistics_sinopharm" translatable="false">Sinopharm </string>
+    <string name="summary">Pregled</string>
+
+
+</resources>

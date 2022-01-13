@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.covapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.example.covapp.ui.statistics.StatisticsFragment"
+        android:label="@string/menu_statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.example.covapp.ui.aboutApp.AboutAppFragment"
+        android:label="@string/menu_about_app"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.covapp.ui.registration.PersonalInfoFragment"
+        android:label="@string/personal_info"
+        tools:layout="@layout/fragment_personal_info">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_personalInfoFragment_to_citizenshipAgeFragment"
+            app:destination="@id/citizenshipAgeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/citizenshipAgeFragment"
+        android:name="com.example.covapp.ui.registration.CitizenshipAgeFragment"
+        android:label="@string/citizenship_age"
+        tools:layout="@layout/fragment_citizenship_age">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_citizenshipAgeFragment_to_professionFragment"
+            app:destination="@id/professionFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_citizenshipAgeFragment_to_badCitizenshipFragment"
+            app:destination="@id/badCitizenshipFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_citizenshipAgeFragment_to_badAgeFragment"
+            app:destination="@id/badAgeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/professionFragment"
+        android:name="com.example.covapp.ui.registration.ProfessionFragment"
+        android:label="@string/profession"
+        tools:layout="@layout/fragment_profession">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_professionFragment_to_covidFragment"
+            app:destination="@id/covidFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/badCitizenshipFragment"
+        android:name="com.example.covapp.ui.registration.BadCitizenshipFragment"
+        tools:layout="@layout/fragment_bad_citizenship">
+        <action
+            android:id="@+id/action_badCitizenshipFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/badAgeFragment"
+        android:name="com.example.covapp.ui.registration.BadAgeFragment"
+        tools:layout="@layout/fragment_bad_age">
+        <action
+            android:id="@+id/action_badAgeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/covidFragment"
+        android:name="com.example.covapp.ui.registration.CovidFragment"
+        tools:layout="@layout/fragment_covid"
+        android:label="@string/covid">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_covidFragment_to_healthConditionsFragment"
+            app:destination="@id/healthConditionsFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_covidFragment_to_badCovidFragment"
+            app:destination="@id/badCovidFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthConditionsFragment"
+        android:name="com.example.covapp.ui.registration.HealthConditionsFragment"
+        android:label="@string/health_con"
+        tools:layout="@layout/fragment_health_conditions">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_healthConditionsFragment_to_vaccineFragment"
+            app:destination="@id/vaccineFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/badCovidFragment"
+        android:name="com.example.covapp.ui.registration.BadCovidFragment"
+        tools:layout="@layout/fragment_bad_covid">
+        <action
+            android:id="@+id/action_badCovidFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vaccineFragment"
+        android:name="com.example.covapp.ui.registration.VaccineFragment"
+        android:label="@string/vaccine"
+        tools:layout="@layout/fragment_vaccine">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_vaccineFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.covapp.ui.registration.SummaryFragment"
+        android:label="@string/summary"
+        tools:layout="@layout/fragment_summary">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="lastName"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="boolean" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="integer" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_summaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/summaryFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

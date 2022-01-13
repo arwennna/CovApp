@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img_r"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30sp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="500sp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30sp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="@string/health_con_text"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/illness1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/diabetes" />
+
+                    <CheckBox
+                        android:id="@+id/illness2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/pregnancy" />
+
+                    <CheckBox
+                        android:id="@+id/illness3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/cancer" />
+
+                    <CheckBox
+                        android:id="@+id/illness4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/ms" />
+
+                    <CheckBox
+                        android:id="@+id/illness5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/leukemia" />
+
+                    <CheckBox
+                        android:id="@+id/illness6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/cardio_vascular" />
+
+                    <CheckBox
+                        android:id="@+id/illness7"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/lungs" />
+
+                    <CheckBox
+                        android:id="@+id/illness8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/kidneys" />
+
+                    <CheckBox
+                        android:id="@+id/illness9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/liver" />
+
+                    <CheckBox
+                        android:id="@+id/illness10"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/asthma" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_toVaccine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.9">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
